@@ -6,23 +6,23 @@
    ===================================================================== */
 window.SITE_CONFIG = Object.freeze({
   siteName: 'SprawdźOdprawę.pl',        // nazwa w nagłówku, stopce i PDF
-  siteUrl: 'https://TWOJA-DOMENA.pl/',  // adres serwisu (do regulaminu)
+  siteUrl: 'https://kalkulatorodprawy.pl/',  // adres serwisu (do regulaminu)
 
   // Cena PDF w zł – musi być równa cenie produktu w Stripe i zmiennej EXPECTED_AMOUNT (w groszach: 1499).
   price: 14.99,
 
   // Link płatności Stripe (Payment Link, tylko BLIK), np. 'https://buy.stripe.com/abc123'.
   // Pusty = sprzedaż wyłączona (na komputerze lokalnym działa tryb demonstracyjny).
-  paymentUrl: '',
+  paymentUrl: 'https://buy.stripe.com/fZu6oJ2zx7oN1QK0kL83C01',
 
   // Weryfikacja płatności po stronie serwera (functions/api/verify.js na Cloudflare Pages).
   verifyEndpoint: '/api/verify',
 
   // Dane sprzedawcy do regulaminu, polityki prywatności i stopki.
   seller: Object.freeze({
-    name: '[imię i nazwisko / firma]',
-    address: '[adres]',
-    email: '[e-mail kontaktowy]',
+    name: 'Mohammad Parsa Rezaei',
+    address: 'ul. Politechniki 3B, pok. 717, 93-590 Łódź',
+    email: 'parsa.rezaei.2014@gmail.com',
     nip: ''
   }),
 
